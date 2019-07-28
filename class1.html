@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Ethan Ma">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Welcome</h1>
+					<h3 style="font-style: italic;">To The</h3>
+					<h1>Web!</h1>
+					<h5>An Intro To The HTML</h5>
+					<p>
+						<small style="font-style: italic;">Created by Ethan Ma</small>
+					</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## History: Internet
+					![](arpanet.jpg)
+					* Internet was born in 1960s from ARPANET (Advanced Research Projects Agency Network). 
+					* By U.S. Department of Defense during cold war. 
+					* It allows multiple computers to communicate on a single network.
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## History: TCP/IP
+					![]( vint-cerf-bob-kahn.png)
+					* In 1970s, scientists Robert Kahn and Vinton Cerf developed Transmission Control Protocol and Internet Protocol, or TCP/IP.
+					* Set the standards for how data could be transmitted between multiple networks.
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## History: ARPANET meets TCP/IP
+					![]( arpanet-tcp.jpg)
+					* In 1980s, ARPANET adopted TCP/IP.
+					* From there researchers began to assemble the “network of networks” that became the modern Internet.
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## History: World Wide Web
+					![]( tim.jpg)
+					* In 1990s, computer scientist Tim Berners-Lee invented the World Wide Web in Geneva, CH.
+					* While it’s often confused with the Internet itself, the web is actually just the most common means of accessing data online in the form of websites and hyperlinks.
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					#### The three fundamental technologies Tim invented  
+					* HTML: HyperText Markup Language. The markup (formatting) language for the web content.
+					* URL/URI: Uniform Resource Identifier, “address” that is unique and used to identify to each resource on the web.
+					* HTTP: Hypertext Transfer Protocol. Allows for the retrieval of linked resources from across the web.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Web Site
+					* Two other technologies developed over the time. 
+						- CSS: Cascade Style Sheet, for styling of the web.
+						- Javascript: for making the web interactive. 	
+					* Web Site consists of Webpages = HTML+CSS+Javascript 
+					* 2 billion Web Sites as of 2019.
+					* Q: What is the most visited website in the world?	
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Web Site Examples
+					|        |          |      |
+					| ------ |:--------:| ----:|
+					| Search | Social   | News |
+					| Bank   | Movie/TV | Map  |
+					| Shop   | Game     | Chat |
+					* Q: Your idea?	
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Client / Server
+					![]( client-server.png)
+					![]( browser.jpg)	
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					[TRY WebPage](https://www.auduno.com/clmtrackr/examples/clm_emotiondetection.html)	
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Write Your Own HTML/CSS
+					[CodePen](https://codepen.io/pen/)<br/>
+					![]( hands.jpg)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Hello World
+					```
+					<!DOCTYPE html>
+					<html>
+					    <head>
+					        <meta charset="utf-8">
+					        <title>New Webpage</title>
+					    </head>
+					    <body>
+
+					    </body>
+					</html>
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Tag
+					```
+					<body>Welcome</body> = <bread>VEGGIE,CHEESE,MEAT</bread>
+					```
+					![]( sandwich.jpg)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Attribute
+					```
+					<span id="1" class="" style="">Welcome!</span> 
+					= 
+					<bread mayo mustard>MEAT</bread>
+					```
+					![]( mayo.jpg)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Example: 
+					```
+				    <body>
+				      <h1>Mickey Mouse</h1>
+				      <h2>Minnie Mouse</h2>
+				      <h3>Donald Duck</h3>
+				      <h4>Daisy Duck</h4>
+				      <h5>Goofy</h5>
+				      <h6>Pluto</h6>
+				      <p title="Peg-Leg Pete">Pete</p>
+				    </body>
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Block vs inline 
+					* Block level elements take up the entire width of their parent container.
+					* Inline elements take up the current space that they exist in
+					* ![]( block-inline.jpg)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Container Type of Tags 
+					```
+				    <span>Mickey</span> <!--inline-->
+				    <p>Mouse</p> <!--paragraph block-->
+				    <div>Club</div> <!--division block-->
+				    <section>House</section> <!-- section block, The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.-->
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## More Tags 
+					```
+				    <sub></sub> <!--subscript-->
+				    <sup></sup> <!--superscript-->
+				    <u></u> <!--underline-->
+				    <em></em> <!--emphasize-->
+				    <strong></strong> <!--bold-->
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Challenge: Write a Poem
+					* To practice the basics of HTML, let's have you write and markup a poem.
+					* To start off with, what will the title of your poem be? 
+					* Using the ```<h1>```... tags we learned about, add a heading for your poem. This will be your title.
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## List Tags 
+					```
+				    <ul></ul> <!--unordered list-->
+				    <ol></ol> <!--ordered list-->
+				    <li></li> <!--list item, is the children of ul-->
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Challenge: Create a wish list for Christmas
+					* To practice the basics of HTML list, let's have you write your top 5 most wanted items for presents.
+					* Using the ```<ol>```... tags we learned about.
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Image
+					* Image Tags 
+					```
+				    <img>
+					```
+					* Image Attributes 
+					```
+				    <img src="" alt="" width="" height="">
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Challenge: Add following image to your web page
+https://upload.wikimedia.org/wikipedia/en/d/d4/Mickey_Mouse.png
+					* Using the ```<img>```... tags we learned about.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Hyper Text Markup Language(HTML) - Link
+					* A Tag: Anchor Tag 
+					```
+ <a href="http://....."/>
+ <a href="#"/>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Challenge: Add missing internal links
+					
+					```
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Jump around</title>
+    </head>
+    <body>
+
+    <h1 id="kangaroos">Kangaroos</h1>
+    
+    <p>Jump to sections: 
+        <a href="?">Locomotion</a>,
+        <a href="?">Diet</a>
+    </p>
+    <p>The <strong>kangaroo</strong> is a marsupial from the family Macropodidae (macropods, meaning 'large foot'). In common use the term is used to describe the largest species from this family, especially those of the genus Macropus, red kangaroo, antilopine kangaroo, eastern grey kangaroo and western grey kangaroo. Kangaroos are endemic to Australia, and one genus, the tree-kangaroo, is also found in Papua New Guinea.</p>
+
+    <p>Kangaroos have large, powerful hind legs, large feet adapted for leaping, a long muscular tail for balance, and a small head. Like most marsupials, female kangaroos have a pouch called a marsupium in which joeys complete postnatal development.</p>
+
+    <p>Larger kangaroos have adapted much better than smaller macropods to land clearing for pastoral agriculture and habitat changes brought to the Australian landscape by humans. Many of the smaller species are rare and endangered, whilst the larger kangaroos are relatively plentiful.</p>
+    
+    
+    <h3 id="locomotion">Locomotion</h3>
+    
+    <p>A Tasmanian forester (eastern grey) kangaroo in motion.
+Kangaroos are the only large animals to use hopping as a means of locomotion. The comfortable hopping speed for a red kangaroo is about 20–25 km/h (13–16 mph), but speeds of up to 70 km/h (44 mph) can be attained over short distances, while it can sustain a speed of 40 km/h (25 mph) for nearly 2 km (1.2 mi). This fast and energy-efficient method of travel has evolved because of the need to regularly cover large distances in search of food and water, rather than the need to escape predators. At slow speeds, it employs pentapedal locomotion, using its tail to form a tripod with its two forelimbs while bringing its hind feet forward. Kangaroos are adept swimmers, and often flee into waterways if threatened by a predator. If pursued into the water, a kangaroo may use its forepaws to hold the predator underwater so as to drown it.</p>
+
+    <h3 id="diet">Diet</h3>
+    
+    <p>Kangaroos have chambered stomachs similar to those of cattle and sheep. They regurgitate the vegetation they have eaten, chew it as cud, and then swallow it again for final digestion. Different species of kangaroos have different diets, although all are strict herbivores. The eastern grey kangaroo is predominantly a grazer, eating a wide variety of grasses, whereas some other species (e.g. the red kangaroo) include significant amounts of shrubs in their diets. The smaller species of kangaroos also consume hypogeal fungi. Many species are nocturnal, and crepuscular, usually spending the days resting in shade, and the cool evenings, nights and mornings moving about and feeding.</p>
+
+    <p>Because of its grazing habits, the kangaroo has developed specialized teeth. Its incisors are able to crop grass close to the ground, and its molars chop and grind the grass. Since the two sides of the lower jaw are not joined together, the lower incisors are farther apart, giving the kangaroo a wider bite. The silica in grass is abrasive, so kangaroo molars move forward as they are ground down, and eventually fall out, replaced by new teeth that grow in the back. This process is known as polyphyodonty and amongst other mammals, only occurs in elephants and manatees.</p>
+    
+    <p>
+    <a href="?">kangaroos</a> |
+    <a href="http://en.wikipedia.org/wiki/Kangaroo">Read more on Wikipedia</a>
+    </p>
+    
+    </body>
+</html>
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## HTML table 
+					* Table Tags 
+					```
+	   <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Picture</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mickey</td>
+            <td>Mouse</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Mickey_Mouse.png" alt="Rabbit with lop ears in barn" width="203"> </td>
+          </tr>
+          <tr>
+            <td>Donald</td>
+            <td>Duck</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Donald_Duck.svg/440px-Donald_Duck.svg.png" alt="Rabbit with lop ears in barn" width="203"> </td>
+          </tr>
+        </tbody>
+      </table>
+
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Challenge: Create Your Dinner Menu
+					
+					```
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: The dinner menu</title>
+    </head>
+    <body>
+    
+        <h1>Our dinner menu</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Meal</th>
+                    <th>Ingredients</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+    </body>
+</html>
+					```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## CSS Intro
+					* A whole new language. Stands for Cascade Style Sheet.
+					* CSS is all about styles.
+					* Exercise: Browse "styled" webpages. [CSS ZenGarden](http://www.csszengarden.com/)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Style Tag: Selector By Tag
+					```
+				    <head>
+				        <meta charset="utf-8">
+				        <title>Disney Mickey Mouse Club House</title>
+				        <style>
+				          h2 {
+				            color: red;
+				          }
+				          body {
+				            background-color: yellow;
+				          }
+				          p {
+				              color: rgb(255, 0, 0);
+				          }
+				        </style>
+				    </head>
+					```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Multiple Choice 
+					Which of the following is the correct select for all h3?
+					* ```
+h3 {
+   color: rgb(255, 0, 0);
+}
+					```
+					* ```
+#h3 {
+   color: red;
+}
+					```
+					* ```
+<h3> {
+   color: rgb(255, 0, 0);
+}
+					```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Selector By ID: Select just that element 
+					* Give the element an ID, ID should be descriptive and unique
+					* Selector should start with # sign, and follow by ID
+					* ID is **case sensitive**
+					```
+#the-element-id {
+  color: rgb(0, 255, 0);
+}
+					```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Selector By Class: Select multiple elements
+					* Define class style in the CSS starting with dot.
+					* Add class attribute to the desired tag.
+					* class is **case sensitive**
+					```
+<style>
+	.font-class {
+    	font-family: cursive;
+    }
+</style>
+<h4 class="font-class">Daisy Duck</h4>
+<h5 class="font-class">Goofy</h5>
+<h6 class="font-class">Pluto</h6>
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Review of the style properties
+					```
+					color: rgb(0, 232, 15);
+					background-color: purple;
+					font-family: serif; /* sans-serif "Helvetica" fallback, others like cursive, fantasy, monospace*/ 
+					font-size: 11px; /* Other units such as "em", relative size*/
+					font-weight: bold;
+					font-style: italic;  /*can be composed*/
+					font: bold italic 11px;
+					line-height: 20px;
+					text-align: center;
+
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					##### Practice: Style MickeyMouseClubHouse theme song lyrics
+					* Tip1: Use [ColorPicker](https://www.w3schools.com/colors/colors_picker.asp) to pick your favorite color
+					* Tip2: Add in the style section using the class selector
+					
+					```
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Mickey Mouse Song Style</title>
+        <style>
+        /*  .name-color-font {
+	            font-family: cursive;
+	            color: rgb(2, 255, 98);
+	        }
+	    */
+        </style>
+    </head>
+    <body>
+
+    <h1><strong class="mickey-title">Mickey</strong> and <strong class="minnie-title">Minnie</strong> Song</h1>
+    
+    <p>
+      Mis-ka, Mou-ska<br>
+      Mickey Mouse!<br>
+      M-I-C-K-E-Y<br>
+      M-O-U-S-E (that's me!)<br>
+      M-I-C-K-E-Y<br>
+      M-O-U-S-E<br>
+      It's the Mickey Mouse Clubhouse<br>
+      Come inside, it's fun inside<br>
+      It's the Mickey Mouse Clubhouse (roll call!)<br>
+      <p class="name-color-font">
+      Donald (present!)<br>
+      Daisy (here!)<br>
+      Goofy (hyuck, here!)<br>
+      Pluto (woof! woof!)<br>
+      Minnie (hi, here!)<br>
+      Mickey (right here!)<br>
+      </p>
+      It's the Mickey Mouse Clubhouse<br>
+      Come inside, it's fun inside<br>
+      M-I-C-K-E-Y<br>
+      M-O-U-S-E<br>
+      </p>
+
+    </body>
+</html>
+					```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Excercise
+					```
+					|           |                                    |
+					| --------- |:----------------------------------:| 
+					| #foo {}   | <p id="bar" src="a.jpg"></p>       | 
+					| #bar {}   | <img class="bar" src="b.jpg">      | 
+					| .FOO {}   | <img id="foo" src="c.jpg">         |  
+					| .bar {}   | <img class="BAR" src="d.jpg">      | 
+					| .BAR {}   | <img class="FOO" src="e.jpg">      |
+					```
+					* Q: How to link the left select to the correct right element?	
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					## Courtesey: 
+					* Khan Academy
+					* PluralSight Training
+					</script>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
